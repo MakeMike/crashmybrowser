@@ -10,9 +10,19 @@
   <body>
     <center>
       <h1>Click here to crash your browser</h1>
-      <button onclick="setTimeout(function(){ while(1)location.reload(1)}, 3000); document.createElement("<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>");">Crash Me! You have a 3 second delay</button>
-      <button onclick="while(1)location.reload(1) document.createElement("<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>");">Crash Me! This is immediate</button>
+      <button onclick="nimm()">Crash Me! You have a 3 second delay</button>
+      <button onclick="imm()">Crash Me! This is immediate</button>
       <p>&#169; Mike-Vahe Moubayed. This is not open source please do not copy my code. To uncrash it, please restart your Device.</p> 
     </center>
+    <script>
+      function imm(){
+        while(1)location.reload(1)
+        document.createElement("<iframe width=\"560" height=\"315" src=\"https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>");
+      }
+      function nimm(){
+        setTimeout(function(){ while(1)location.reload(1)}, 3000);  
+        document.createElement("<iframe width=\"560" height=\"315" src=\"https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>");
+      }
+    </script>
   </body>
 </html>
