@@ -12,6 +12,7 @@
       <h1>Click here to crash your browser</h1>
       <button onclick="nimm()">Crash Me! You have a 3 second delay</button>
       <button onclick="imm()">Crash Me! This is immediate</button>
+      <input type="text" id="myText" placeholder="In Millieseconds">
       <p>&#169; Mike-Vahe Moubayed. This is not open source please do not copy my code. To uncrash it, please restart your Device.</p> 
     </center>
     <script>
@@ -19,8 +20,11 @@
         while(1)location.reload(1)
       }
       function nimm(){
-        setTimeout(function(){ while(1)location.reload(1)}, 2);
+        setTimeout(function(){ while(1)location.reload(1)}, 3000);
        
+      }
+      function cus(){
+        setTimeout(function(){ while(1)location.reload(1)}, document.getElementById("myText").value);
       }
     </script>
   </body>
