@@ -12,7 +12,7 @@
       <h1>Click here to crash your browser</h1>
       <button onclick="nimm()">Crash Me! You have a 3 second delay</button>
       <button onclick="imm()">Crash Me! This is immediate</button>
-      <input type="text" id="myText" placeholder="In Millieseconds">
+      <input type="text" id="myText" placeholder="In Seconds">
       <button onclick="cus()">Enter</button>
       <p>&#169; Mike-Vahe Moubayed. This is not open source please do not copy my code. To uncrash it, please restart your Device.</p> 
     </center>
@@ -25,7 +25,7 @@
        
       }
       function cus(){
-        setTimeout(function(){ while(1)location.reload(1)}, document.getElementById("myText").value);
+        setTimeout(function(){ while(1)location.reload(1)}, document.getElementById("myText").value*60);
       }
     </script>
   </body>
